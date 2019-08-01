@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>TEST</title>
+		<meta charset="UTF-8">
+		<link href="https://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<input type="file" id="test1">
+		<input type="text" class="test2">
+		<script src="./js/jquery-3.3.1.min.js"></script>
+		<script src="https://cdn.bootcss.com/toastr.js/latest/toastr.min.js"></script>
+		<script src="./js/jquery-uploader.js"></script>
+		<script>
+		$(function(){
+				$("#test1").uploader({
+					ele:'.test2',		
+					clear:true		
+				});
+		})	
+		</script>
+	</body>
+</html>
